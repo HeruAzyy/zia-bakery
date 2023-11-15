@@ -1,0 +1,8 @@
+{
+  "workbench.colorTheme": "Andromeda Bordered",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.fontWeight": "300",
+  "livePreview.defaultPreviewPath": "/index.html"
+}

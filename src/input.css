@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  body {
+    @apply bg-gray-300 font-inter;
+  }
+  .nav.active {
+    @apply translate-x-0;
+  }
+}
