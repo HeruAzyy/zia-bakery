@@ -12,16 +12,18 @@
   body {
     @apply bg-gray-300 font-inter;
   }
-  .nav.active {
-    @apply translate-x-0;
-  }
-  .fix-nav {
-    @apply bg-dark/90 shadow-md;
-  }
 }
 
 @layer utilities {
   .after {
     @apply after:mt-1 after:block after:h-1 after:w-11 after:rounded-md after:bg-pink  after:content-[''];
   }
+}
+
+.fix-nav {
+  @apply bg-dark/90 shadow-md;
+}
+
+.nav.active {
+  @apply translate-x-0;
 }
