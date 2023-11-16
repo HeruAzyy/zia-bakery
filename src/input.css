@@ -12,4 +12,7 @@
   .nav.active {
     @apply translate-x-0;
   }
+  .fix-nav {
+    @apply bg-dark/90 shadow-md;
+  }
 }
