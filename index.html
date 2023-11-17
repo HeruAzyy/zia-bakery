@@ -18,7 +18,7 @@
   <body>
     <!-- NAVBAR -->
     <header
-      class="fixed top-0 z-10 w-full py-3 transition-all duration-300 lg:py-5"
+      class="fixed top-0 z-10 w-full py-3 transition-all duration-500 lg:py-5"
     >
       <div class="container">
         <div class="flex justify-end px-6 lg:items-center lg:justify-center">
@@ -89,7 +89,7 @@
             <button
               class="mt-6 rounded-lg border-2 border-pink px-5 py-2 text-gray-300 shadow-md transition hover:bg-pink md:text-xl"
             >
-              <a href="#">Menu</a>
+              <a href="#menu">Menu</a>
             </button>
           </div>
         </div>
@@ -100,7 +100,10 @@
     <section id="about" class="w-full px-6 pt-20">
       <div class="container">
         <div class="w-full md:w-3/5">
-          <h2 class="after">Queen Meri - Profesional Mille Crepes</h2>
+          <h2 class="after">
+            Queen Meri -
+            <span class="font-normal">About Us</span>
+          </h2>
           <p class="pt-3">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
             explicabo soluta atque distinctio, perspiciatis consequatur eligendi
@@ -114,7 +117,7 @@
         >
           <div class="flex h-[400px] bg-sage/20 bg-gradient-to-r from-dark">
             <div class="self-center px-5 md:w-3/4 md:px-10 lg:w-1/2">
-              <h2 class="before mb-5 text-white">Meri is...</h2>
+              <h2 class="mb-5 font-serif font-medium text-white">Meri is...</h2>
               <p class="text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Explicabo quo assumenda voluptatum suscipit ex consequatur
@@ -125,8 +128,11 @@
           </div>
         </div>
 
+        <!-- SERVICES -->
         <div class="w-full pt-16">
-          <h2 class="after">Queen Meri - Services</h2>
+          <h2 class="after">
+            Queen Meri - <span class="font-normal">Services</span>
+          </h2>
         </div>
         <div class="flex w-full flex-wrap gap-5 py-5 md:flex-nowrap">
           <div
@@ -168,6 +174,82 @@
                 Konsultasikan apapun keluhan anda mengenai menu kami, kami akan
                 selalu membantu dan menyelesaikannya.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="w-full px-6 pt-20">
+      <div class="container">
+        <h2 class="after">
+          Queen Meri -
+          <span class="font-normal">Menu</span>
+        </h2>
+
+        <div class="mt-5 flex w-full flex-wrap gap-5 md:flex-nowrap">
+          <div
+            class="group relative w-full max-w-screen-sm overflow-hidden shadow-lg"
+          >
+            <div
+              class="h-72 w-full bg-white bg-cover bg-center"
+              style="background-image: url(img/menu/nutella.jpg)"
+            >
+              <div
+                class="absolute bottom-0 w-full origin-bottom translate-y-full rounded-t-md border-t border-gray-300 bg-dark/30 px-3 py-3 text-white backdrop-blur-xl transition-all duration-300 group-hover:translate-y-0"
+              >
+                <h3 class="text-center">Nutella Mille Crepes</h3>
+                <p class="text-center text-sm font-light">IDR - 25K</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative w-full max-w-screen-sm overflow-hidden shadow-lg"
+          >
+            <div
+              class="h-72 w-full bg-white bg-cover bg-center"
+              style="background-image: url(img/menu/oreo.jpg)"
+            >
+              <div
+                class="absolute bottom-0 w-full origin-bottom translate-y-full rounded-t-md border-t border-gray-300 bg-dark/30 px-3 py-3 text-white backdrop-blur-xl transition-all duration-300 group-hover:translate-y-0"
+              >
+                <h3 class="text-center">Oreo Mille Crepes</h3>
+                <p class="text-center text-sm font-light">IDR - 25K</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative w-full max-w-screen-sm overflow-hidden shadow-lg"
+          >
+            <div
+              class="h-72 w-full bg-white bg-cover bg-center"
+              style="background-image: url(img/menu/strawberry.jpg)"
+            >
+              <div
+                class="absolute bottom-0 w-full origin-bottom translate-y-full rounded-t-md border-t border-gray-300 bg-dark/30 px-3 py-3 text-white backdrop-blur-xl transition-all duration-300 group-hover:translate-y-0"
+              >
+                <h3 class="text-center">Strawberry Mille Crepes</h3>
+                <p class="text-center text-sm font-light">IDR - 25K</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative w-full max-w-screen-sm overflow-hidden shadow-lg"
+          >
+            <div
+              class="h-72 w-full bg-white bg-cover bg-center"
+              style="background-image: url(img/menu/tiramisu.jpg)"
+            >
+              <div
+                class="absolute bottom-0 w-full origin-bottom translate-y-full rounded-t-md border-t border-gray-300 bg-dark/30 px-3 py-3 text-white backdrop-blur-xl transition-all duration-300 group-hover:translate-y-0"
+              >
+                <h3 class="text-center">Tiramisu Mille Crepes</h3>
+                <p class="text-center text-sm font-light">IDR - 25K</p>
+              </div>
             </div>
           </div>
         </div>
