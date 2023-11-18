@@ -22,7 +22,7 @@
 
 @layer utilities {
   .after {
-    @apply after:mt-1 after:block after:h-0.5 after:w-16 after:rounded-md after:bg-pink  after:content-[''];
+    @apply after:mt-1 after:block after:h-1 after:w-16 after:rounded-md after:bg-pink  after:content-[''];
   }
   .before {
     @apply before:mb-1 before:block before:h-0.5 before:w-10 before:rounded-md before:bg-pink  before:content-[''];

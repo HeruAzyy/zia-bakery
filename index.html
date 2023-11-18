@@ -72,12 +72,12 @@
             >
               Wellcome to <br />
               <span class="text-5xl tracking-wider text-pink md:text-6xl"
-                >Queen Meri</span
+                ><a href="/">Queen Meri</a></span
               >
             </h1>
 
             <p
-              class="font-light tracking-wider text-gray-300 drop-shadow-sm md:text-xl"
+              class="text-sm font-light tracking-wider text-gray-300 drop-shadow-sm md:text-xl"
             >
               professional artisan mille crepes
             </p>
@@ -158,8 +158,8 @@
               <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
+                  width="35"
+                  height="35"
                   viewBox="0 0 24 24"
                   style="fill: #172121"
                 >
@@ -197,8 +197,8 @@
         <div class="w-full pt-16">
           <h2 class="after">Services</h2>
         </div>
-        <div class="flex w-full flex-wrap gap-5 py-5 md:flex-nowrap">
-          <div class="rounded-md border-t-2 px-5 py-3 shadow-lg">
+        <div class="flex w-full flex-wrap gap-5 pt-3 md:flex-nowrap">
+          <div class="rounded-md border-t-2 px-5 pb-5 shadow-lg">
             <img src="img/service-1.png" alt="Service" />
 
             <div class="w-full text-center">
@@ -210,11 +210,11 @@
             </div>
           </div>
 
-          <div class="rounded-md border-t-2 px-5 py-3 shadow-lg">
+          <div class="rounded-md border-t-2 px-5 pb-5 shadow-lg">
             <img src="img/service-2.png" alt="Service" />
 
             <div class="w-full text-center">
-              <h2>Pesan Secara Online</h2>
+              <h2>Pesan Online</h2>
               <p class="pt-3">
                 Anda bisa memesan menu kami secara online dan biarkan kami yang
                 mengantarkan sesuai tujuan.
@@ -222,14 +222,14 @@
             </div>
           </div>
 
-          <div class="rounded-md border-t-2 px-5 py-3 shadow-lg">
+          <div class="rounded-md border-t-2 px-5 pb-5 shadow-lg">
             <img src="img/service-3.png" alt="Service" />
 
             <div class="w-full text-center">
               <h2>Konsultasi</h2>
               <p class="pt-3">
-                Konsultasikan apapun keluhan anda mengenai menu kami, kami akan
-                selalu membantu dan menyelesaikannya.
+                Konsultasikan keluhan anda mengenai menu kami, kami akan selalu
+                membantu dan menyelesaikannya.
               </p>
             </div>
           </div>
@@ -238,12 +238,60 @@
     </section>
 
     <!-- MENU -->
-    <section></section>
+    <section id="menu"></section>
+
+    <!-- ORDER FORM -->
+    <section class="w-full px-6 pt-20">
+      <div class="container">
+        <div class="w-full text-center md:mx-auto md:w-3/5">
+          <h2>Contact</h2>
+          <p class="pt-3 font-medium tracking-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ab
+            vitae id sint inventore sapiente.
+          </p>
+        </div>
+
+        <form>
+          <div class="w-full pt-5 lg:mx-auto lg:w-2/3">
+            <div class="mb-3 w-full">
+              <input
+                type="text"
+                id="name"
+                placeholder="Nama"
+                class="w-full rounded-md bg-gray-100 px-5 py-3 shadow focus:outline-none"
+              />
+            </div>
+            <div class="mb-3 w-full">
+              <textarea
+                name="Pesan"
+                id="Pesan"
+                placeholder="Pesan.."
+                class="h-24 w-full rounded-md bg-gray-100 px-5 py-3 shadow focus:outline-none"
+              ></textarea>
+            </div>
+            <div class="w-full">
+              <button
+                type="submit"
+                class="rounded-md border-2 border-pink bg-transparent px-6 py-2 font-semibold shadow hover:bg-pink hover:text-white"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <div class="w-full py-10">
-      <p class="text-center font-semibold text-gray-700">
-        Design & Developed by Heru Azy | &copy;2023.
+      <p class="text-center font-medium text-gray-600">
+        Design & Developed by
+        <span class="font-bold hover:text-pink"
+          ><a href="https://github.com/HeruAzyy" target="_blank"
+            >Heru Azy</a
+          ></span
+        >
+        | &copy;2023.
       </p>
     </div>
 
