@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-3xl font-bold;
-  }
-  h2 {
-    @apply text-xl font-bold;
-  }
-  h3 {
-    @apply text-lg font-bold;
-  }
-  p {
-    @apply text-base font-normal tracking-tight;
-  }
-  body {
-    @apply bg-light font-inter;
-  }
+   h1 {
+      @apply text-3xl font-bold;
+   }
+   h2 {
+      @apply text-xl font-bold;
+   }
+   h3 {
+      @apply text-lg font-bold;
+   }
+   p {
+      @apply text-base font-normal tracking-tight;
+   }
+   body {
+      @apply bg-light font-inter;
+   }
 }
 
 @layer utilities {
-  .after {
-    @apply after:mt-1 after:block after:h-1 after:w-16 after:rounded-md after:bg-pink  after:content-[''];
-  }
+   .after {
+      @apply after:mt-1 after:block after:h-1 after:w-16 after:rounded-md after:bg-pink  after:content-[''];
+   }
 }
 
 .fix-nav {
-  @apply bg-dark/90 shadow-md;
+   @apply bg-dark/70 backdrop-blur-lg shadow-md;
 }
 
 .nav.active {
-  @apply translate-x-0;
+   @apply translate-x-0;
 }

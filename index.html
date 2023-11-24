@@ -18,16 +18,26 @@
   <body>
     <!-- NAVBAR -->
     <header
-      class="fixed top-0 z-10 w-full py-3 transition-all duration-500 lg:py-5"
+      class="fixed top-0 z-10 w-full py-3 transition-all duration-300 lg:py-5"
     >
       <div class="container">
-        <div class="flex justify-end px-6 lg:items-center lg:justify-center">
+        <div class="flex items-center justify-between px-6">
+          <div>
+            <a href="#home">
+              <h2
+                class="font-serif font-light tracking-wider text-white hover:text-pink"
+              >
+                Zia's Bakery.
+              </h2>
+            </a>
+          </div>
+
           <nav
             id="navMenu"
-            class="nav absolute right-0 top-[110%] w-[130px] origin-right translate-x-[1000px] rounded-l-lg border-l-2 border-gray-700 bg-dark/50 px-6 shadow-lg backdrop-blur-md transition-all duration-500 lg:static lg:top-0 lg:w-0 lg:translate-x-0 lg:border-none lg:bg-transparent lg:shadow-none lg:backdrop-blur-none"
+            class="nav absolute right-0 top-[100%] h-screen w-1/2 translate-x-[1000px] border bg-light shadow-lg transition-all duration-500 lg:static lg:h-[inherit] lg:w-[inherit] lg:translate-x-0 lg:border-none lg:bg-transparent lg:bg-none lg:shadow-none"
           >
             <ul
-              class="font-semibold text-white lg:flex lg:justify-center lg:pt-0"
+              class="text-center font-semibold text-dark lg:flex lg:pt-0 lg:text-white"
             >
               <li class="mx-3 py-5 hover:text-pink lg:py-0">
                 <a href="#home">Home</a>
@@ -37,6 +47,9 @@
               </li>
               <li class="mx-3 py-5 hover:text-pink lg:py-0">
                 <a href="#menu">Menu</a>
+              </li>
+              <li class="ml-3 py-5 hover:text-pink lg:py-0">
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
@@ -393,6 +406,7 @@
     </section>
 
     <div
+      id="contact"
       class="mt-14 h-44 w-full bg-cover bg-center lg:h-56"
       style="background-image: url(img/order-img.jpg)"
     >
@@ -417,7 +431,7 @@
       </div>
     </div>
 
-    <!-- ORDER FORM -->
+    <!-- CONTACT -->
     <section class="w-full px-6 pt-10">
       <div class="container">
         <div class="w-full text-center md:mx-auto md:w-3/5">
