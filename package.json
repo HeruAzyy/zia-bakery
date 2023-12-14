@@ -1,8 +1,8 @@
 {
-  "name": "mille-crepes",
+  "name": "zia-bakery",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
@@ -12,7 +12,6 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.1.0",
-    "prettier-plugin-tailwindcss": "^0.5.7",
     "tailwindcss": "^3.3.5"
   }
 }
