@@ -12,6 +12,9 @@
 			href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet" />
 
+		<!-- AOS -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 		<title>Zia's Bakery</title>
 	</head>
 	<body>
@@ -72,7 +75,7 @@
 			style="background-image: url(img/hero-img.jpg)">
 			<div class="h-screen w-full bg-dark/60 px-6 md:pt-0">
 				<div class="container flex h-screen">
-					<div class="w-full self-center text-center">
+					<div class="w-full self-center text-center" data-aos="fade-down">
 						<h2
 							class="text-2xl font-light uppercase tracking-wider text-gray-300">
 							Welcome To
@@ -115,7 +118,9 @@
 		<section id="about" class="w-full px-6 pt-20">
 			<div class="container">
 				<div class="lg:flex lg:gap-5">
-					<div class="w-full lg:order-last lg:w-3/4 lg:pt-5">
+					<div
+						class="w-full lg:order-last lg:w-3/4 lg:pt-5"
+						data-aos="fade-in">
 						<h2 class="after">About Us</h2>
 						<p class="pt-3">
 							<span class="font-semibold">Zia's Bakery</span>
@@ -189,7 +194,8 @@
 
 					<div
 						class="mt-5 w-full overflow-hidden rounded bg-cover bg-center shadow-md"
-						style="background-image: url(img/about-img.jpg)">
+						style="background-image: url(img/about-img.jpg)"
+						data-aos="fade-in">
 						<div
 							class="flex h-[400px] bg-sage/20 bg-gradient-to-r from-dark">
 							<div class="self-center px-5 md:w-3/4 md:px-10">
@@ -210,10 +216,12 @@
 				</div>
 
 				<!-- SERVICES -->
-				<div class="w-full pt-16">
+				<div class="w-full pt-16" data-aos="fade-in">
 					<h2 class="after">Services</h2>
 				</div>
-				<div class="flex w-full flex-wrap gap-5 pt-3 md:flex-nowrap">
+				<div
+					class="flex w-full flex-wrap gap-5 pt-3 md:flex-nowrap"
+					data-aos="fade-in">
 					<div class="rounded-md border-t-2 px-5 pb-5 shadow-lg">
 						<img src="img/service-1.png" alt="Service" />
 
@@ -256,14 +264,15 @@
 		<!-- MENU -->
 		<section id="menu" class="w-full px-6 pt-20">
 			<div class="container">
-				<div class="w-full pb-3">
+				<div class="w-full pb-3" data-aos="fade-in">
 					<h2 class="after">Our Menu</h2>
 				</div>
 
 				<div
 					class="grid grid-cols-1 gap-3 md:gap-6 md:grid-cols-2 lg:grid-cols-4">
 					<div
-						class="group overflow-hidden rounded-md border border-pink bg-gray-200 pb-5 shadow-md">
+						class="group overflow-hidden rounded-md border border-pink bg-gray-200 pb-5 shadow-md"
+						data-aos="fade-up">
 						<div class="overflow-hidden">
 							<div
 								class="flex h-64 w-full bg-cover bg-center"
@@ -289,7 +298,8 @@
 					</div>
 
 					<div
-						class="group overflow-hidden rounded-md border border-pink bg-gray-200 pb-5 shadow-md">
+						class="group overflow-hidden rounded-md border border-pink bg-gray-200 pb-5 shadow-md"
+						data-aos="fade-up">
 						<div class="overflow-hidden">
 							<div
 								class="flex h-64 w-full bg-cover bg-center"
@@ -315,7 +325,8 @@
 					</div>
 
 					<div
-						class="group overflow-hidden rounded-md border border-pink bg-gray-200 pb-5 shadow-md">
+						class="group overflow-hidden rounded-md border border-pink bg-gray-200 pb-5 shadow-md"
+						data-aos="fade-up">
 						<div class="overflow-hidden">
 							<div
 								class="flex h-64 w-full bg-cover bg-center"
@@ -341,7 +352,8 @@
 					</div>
 
 					<div
-						class="group overflow-hidden rounded-md border border-pink bg-gray-200 pb-5 shadow-md">
+						class="group overflow-hidden rounded-md border border-pink bg-gray-200 pb-5 shadow-md"
+						data-aos="fade-up">
 						<div class="overflow-hidden">
 							<div
 								class="flex h-64 w-full bg-cover bg-center"
@@ -375,7 +387,7 @@
 			style="background-image: url(img/order-img.jpg)">
 			<div
 				class="flex h-[100%] w-full items-center bg-dark/70 px-6 py-5 text-center text-white">
-				<div class="w-full">
+				<div class="w-full" data-aos="fade-in">
 					<p class="text-sm font-light uppercase tracking-wider">
 						Hubungi kami untuk
 					</p>
@@ -395,7 +407,7 @@
 		</div>
 
 		<!-- CONTACT -->
-		<section class="w-full px-6 pt-10">
+		<section class="w-full px-6 pt-10" data-aos="fade-up">
 			<div class="container">
 				<div class="w-full text-center md:mx-auto md:w-3/5">
 					<h2>Contact</h2>
@@ -446,5 +458,13 @@
 		</div>
 
 		<script src="src/main.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				once: true,
+				duration: 700,
+				offset: 200
+			});
+		</script>
 	</body>
 </html>
