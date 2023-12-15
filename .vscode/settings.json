@@ -1,9 +1,0 @@
-{
-  "workbench.colorTheme": "Mayukai Mirage",
-  "editor.tabSize": 3,
-  "workbench.iconTheme": "vscode-icons",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.fontWeight": "300",
-  "livePreview.defaultPreviewPath": "/index.html"
-}
