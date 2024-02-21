@@ -76,7 +76,7 @@ export const MenuSection = () => {
 
 				<CardMenu>
 					<CardMenu.Header
-						image='../src/assets/images/menu/matcha.jpg'
+						image='src/assets/images/menu/matcha.jpg'
 						stars='4.5'
 					/>
 					<CardMenu.Body name='Matcha Mille Crepes'>
@@ -88,7 +88,7 @@ export const MenuSection = () => {
 
 				<CardMenu>
 					<CardMenu.Header
-						image='../src/assets/images/menu/nutella.jpg'
+						image='src/assets/images/menu/nutella.jpg'
 						stars='4.5'
 					/>
 					<CardMenu.Body name='Nutella Mille Crepes'>
@@ -100,7 +100,7 @@ export const MenuSection = () => {
 
 				<CardMenu>
 					<CardMenu.Header
-						image='../src/assets/images/menu/oreo.jpg'
+						image='src/assets/images/menu/oreo.jpg'
 						stars='4.5'
 					/>
 					<CardMenu.Body name='Oreo Mille Crepes'>
@@ -112,7 +112,7 @@ export const MenuSection = () => {
 
 				<CardMenu>
 					<CardMenu.Header
-						image='../src/assets/images/menu/strawberry.jpg'
+						image='src/assets/images/menu/strawberry.jpg'
 						stars='4.5'
 					/>
 					<CardMenu.Body name='Strawberry Mille Crepes'>
@@ -124,7 +124,7 @@ export const MenuSection = () => {
 
 				<CardMenu>
 					<CardMenu.Header
-						image='../src/assets/images/menu/tiramisu.jpg'
+						image='src/assets/images/menu/tiramisu.jpg'
 						stars='4.5'
 					/>
 					<CardMenu.Body name='Tiramisu Mille Crepes'>
