@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-jost text-base;
+	}
+
+	h1 {
+		@apply text-6xl;
+	}
+	h2 {
+		@apply text-5xl;
+	}
+	h3 {
+		@apply text-4xl;
+	}
+	h4 {
+		@apply text-3xl;
+	}
+	h5 {
+		@apply text-2xl;
+	}
+}
+
+*::-webkit-scrollbar {
+	width: 0;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: transparent;
+	border: none;
+}

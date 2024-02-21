@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-	content: ['*.html'],
+export default {
+	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
-		container: {
-			center: true
-		},
 		extend: {
 			fontFamily: {
 				serif: ['DM Serif Display'],
-				inter: ['Inter']
+				jost: ['Jost']
 			},
 			colors: {
 				light: '#EADEDA',
@@ -19,4 +16,4 @@ module.exports = {
 		}
 	},
 	plugins: []
-};
+}
