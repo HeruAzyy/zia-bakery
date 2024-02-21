@@ -6,7 +6,7 @@ const menus = [
 	{
 		id: 1,
 		name: 'Nutella Mille Crepes',
-		image: 'src/assets/images/menu/nutella.jpg',
+		image: '../src/assets/images/menu/nutella.jpg',
 		stars: 4.5,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -15,7 +15,7 @@ const menus = [
 	{
 		id: 2,
 		name: 'Matcha Mille Crepes',
-		image: 'src/assets/images/menu/matcha.jpg',
+		image: '../src/assets/images/menu/matcha.jpg',
 		stars: 4.3,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -24,7 +24,7 @@ const menus = [
 	{
 		id: 3,
 		name: 'Oreo Mille Crepes',
-		image: 'src/assets/images/menu/oreo.jpg',
+		image: '../src/assets/images/menu/oreo.jpg',
 		stars: 4.4,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -33,7 +33,7 @@ const menus = [
 	{
 		id: 4,
 		name: 'Strawberry Mille Crepes',
-		image: 'src/assets/images/menu/strawberry.jpg',
+		image: '../src/assets/images/menu/strawberry.jpg',
 		stars: 4.6,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -42,7 +42,7 @@ const menus = [
 	{
 		id: 5,
 		name: 'Tiramisu Mille Crepes',
-		image: 'src/assets/images/menu/tiramisu.jpg',
+		image: '../src/assets/images/menu/tiramisu.jpg',
 		stars: 4.7,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -63,7 +63,7 @@ export const MenuSection = () => {
 				</a>
 			</div>
 
-			<div className='flex gap-5 overflow-x-scroll snap-x snap-mandatory'>
+			<div className='flex gap-5 overflow-x-scroll snap-x snap-mandatory pb-1'>
 				{menus.map((menu) => (
 					<CardMenu key={menu.id}>
 						<CardMenu.Header image={menu.image} stars={menu.stars} />
