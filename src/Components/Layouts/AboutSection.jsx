@@ -5,7 +5,7 @@ import { SectionTitle } from '../Elements/SectionTitle'
 
 export const AboutSection = () => {
 	return (
-		<section id='about' className='px-5 pt-10 xl:px-20'>
+		<section id='about' className='px-5 pt-24 xl:px-20'>
 			<div className='flex flex-col gap-5 md:gap-10 md:flex-row'>
 				<div className='bg-[url(../src/assets/images/about-img.jpg)] bg-center bg-cover rounded-2xl overflow-hidden w-full shadow-md'>
 					<div className='flex h-[400px] bg-dark/40 bg-gradient-to-r from-dark'>
