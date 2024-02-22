@@ -1,5 +1,5 @@
-import { Arrow } from '../../assets/SVG/Arrow'
-import { Phone } from '../../assets/SVG/Phone'
+import { IoArrowForward } from 'react-icons/io5'
+import { FaPhone } from 'react-icons/fa6'
 import { Button } from '../Elements/Button'
 import { SectionTitle } from '../Elements/SectionTitle'
 
@@ -37,7 +37,7 @@ export const AboutSection = () => {
 
 					<div className='pb-10 flex items-center gap-3'>
 						<div className='p-3 bg-light rounded-full'>
-							<Phone variant='fill-pink' />
+							<FaPhone className='fill-pink w-5 h-5' />
 						</div>
 						<div>
 							<p className='font-bold'>(+62) 8123 4567</p>
@@ -47,7 +47,7 @@ export const AboutSection = () => {
 
 					<Button variant='bg-pink text-white'>
 						Selengkapnya
-						<Arrow variant='fill-white' />
+						<IoArrowForward className='fill-white h-5 w-5 group-hover:translate-x-1 transition-all' />
 					</Button>
 				</div>
 			</div>

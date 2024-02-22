@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Star } from '../../assets/SVG/Star'
+import { FaStar } from 'react-icons/fa6'
 import { Button } from '../Elements/Button'
 
 export const CardMenu = ({ children }) => {
@@ -15,7 +15,7 @@ export const Header = ({ image, stars }) => {
 			<img className='w-full' src={image} alt='Menu Kami' />
 			<div className='absolute top-3 left-3'>
 				<div className='px-4 py-2 flex items-center gap-2 bg-pink rounded-3xl'>
-					<Star variant='fill-yellow-500' />
+					<FaStar className='fill-yellow-300' />
 					<p className='text-white text-sm font-semibold'>{stars}</p>
 				</div>
 			</div>

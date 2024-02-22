@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Arrow } from '../../assets/SVG/Arrow'
+import { IoArrowForward } from 'react-icons/io5'
 import { Services } from '../Elements/Services'
 
 export const CardService = ({ title, description }) => {
@@ -10,7 +10,7 @@ export const CardService = ({ title, description }) => {
 				href='#services'
 				className='font-semibold inline-flex items-center justify-center gap-2 group'>
 				Selengkapnya
-				<Arrow variant='fill-pink' />
+				<IoArrowForward className='fill-pink h-5 w-5 group-hover:translate-x-1 transition-all' />
 			</a>
 		</div>
 	)

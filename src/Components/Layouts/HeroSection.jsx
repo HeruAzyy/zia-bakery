@@ -1,4 +1,4 @@
-import { ArrowDown } from '../../assets/SVG/ArrowDown'
+import { IoIosArrowDown } from 'react-icons/io'
 import { SocialIcons } from '../Fragments/SocialIcons'
 
 export const HeroSection = () => {
@@ -19,7 +19,7 @@ export const HeroSection = () => {
 					<a
 						href='#about'
 						className='w-10 mx-auto flex justify-center items-center mt-20'>
-						<ArrowDown />
+						<IoIosArrowDown className='w-7 h-7' />
 					</a>
 				</div>
 			</div>

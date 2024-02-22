@@ -1,4 +1,4 @@
-import { Arrow } from '../../assets/SVG/Arrow'
+import { IoArrowForward } from 'react-icons/io5'
 import { SectionTitle } from '../Elements/SectionTitle'
 import { CardMenu } from '../Fragments/CardMenu'
 
@@ -57,9 +57,9 @@ export const MenuSection = () => {
 				<SectionTitle>Menu Kami</SectionTitle>
 				<a
 					href='#menu'
-					className='self-start font-semibold pt-1 flex gap-2 group'>
+					className='self-start font-semibold pt-1 flex items-center gap-2 group'>
 					Semua Menu
-					<Arrow />
+					<IoArrowForward className='h-5 w-5 group-hover:translate-x-1 transition-all' />
 				</a>
 			</div>
 
