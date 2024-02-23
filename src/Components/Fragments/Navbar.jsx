@@ -3,7 +3,7 @@ import { CgMenuRightAlt } from 'react-icons/cg'
 import { useState } from 'react'
 
 export const Navbar = () => {
-	let Links = [
+	const Links = [
 		{ name: 'Home', link: '#' },
 		{ name: 'About', link: '#about' },
 		{ name: 'Services', link: '#services' },
@@ -11,7 +11,7 @@ export const Navbar = () => {
 		{ name: 'Contact', link: '#contact' }
 	]
 
-	let [open, setOpen] = useState(false)
+	const [open, setOpen] = useState(false)
 
 	return (
 		<nav className='shadow-md w-full z-50 fixed top-0 left-0 py-3 px-5 bg-white/70 backdrop-blur-md text-dark xl:px-20'>
