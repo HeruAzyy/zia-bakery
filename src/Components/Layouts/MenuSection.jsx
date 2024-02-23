@@ -2,11 +2,11 @@ import { IoArrowForward } from 'react-icons/io5'
 import { SectionTitle } from '../Elements/SectionTitle'
 import { CardMenu } from '../Fragments/CardMenu'
 
-const menus = [
+let menus = [
 	{
 		id: 1,
 		name: 'Matcha Mille Crepes',
-		image: 'public/menu/matcha.jpg',
+		image: 'menu/matcha.jpg',
 		stars: 4.4,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -15,7 +15,7 @@ const menus = [
 	{
 		id: 2,
 		name: 'Nutella Mille Crepes',
-		image: 'public/menu/nutella.jpg',
+		image: 'menu/nutella.jpg',
 		stars: 4.5,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -24,7 +24,7 @@ const menus = [
 	{
 		id: 3,
 		name: 'Oreo Mille Crepes',
-		image: 'public/menu/oreo.jpg',
+		image: 'menu/oreo.jpg',
 		stars: 4.4,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -33,7 +33,7 @@ const menus = [
 	{
 		id: 4,
 		name: 'Strawberry Mille Crepes',
-		image: 'public/menu/strawberry.jpg',
+		image: 'menu/strawberry.jpg',
 		stars: 4.6,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -42,7 +42,7 @@ const menus = [
 	{
 		id: 5,
 		name: 'Tiramisu Mille Crepes',
-		image: 'public/menu/tiramisu.jpg',
+		image: 'menu/tiramisu.jpg',
 		stars: 4.7,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -50,7 +50,7 @@ const menus = [
 	}
 ]
 
-export const MenuSection = () => {
+export let MenuSection = () => {
 	return (
 		<section id='menu' className='px-5 py-24 whitespace-nowrap xl:px-20'>
 			<div className='flex items-center justify-between'>
