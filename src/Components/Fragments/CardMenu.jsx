@@ -4,7 +4,7 @@ import { Button } from '../Elements/Button'
 
 export const CardMenu = ({ children }) => {
 	return (
-		<div className='border shadow-md rounded-2xl p-5 snap-center snap-always hover:bg-gray-100'>
+		<div className='border-t shadow-md rounded-2xl p-5 snap-start snap-always xl:hover:bg-gray-100'>
 			{children}
 		</div>
 	)
