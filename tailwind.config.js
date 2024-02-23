@@ -10,8 +10,7 @@ export default {
 			colors: {
 				light: '#EADEDA',
 				dark: '#172121',
-				pink: '#CA6680',
-				sage: '#6A8E7F'
+				pink: '#CA6680'
 			}
 		}
 	},
