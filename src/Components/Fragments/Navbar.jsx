@@ -18,9 +18,11 @@ export const Navbar = () => {
 			<div className='flex items-center justify-between'>
 				<div>
 					<a href='/'>
-						<h5 className='font-semibold tracking-tighter px-2 border-t-2 border-b-2 border-dark text-dark hover:text-pink'>
-							ZB.
-						</h5>
+						<img
+							className='w-8 md:w-10'
+							src='logo.png'
+							alt='Zia Bakery'
+						/>
 					</a>
 				</div>
 
