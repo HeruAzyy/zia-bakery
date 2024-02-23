@@ -2,7 +2,7 @@ import { Button } from '../Elements/Button'
 
 export const ContactOrder = () => {
 	return (
-		<div className='text-center bg-[url(../src/assets/images/order-img.jpg)] bg-center bg-cover'>
+		<div className='text-center bg-[url(images/order-img.jpg)] bg-center bg-cover'>
 			<div className='backdrop-brightness-50 bg-dark/50 py-14 text-white'>
 				<p>HUBUNGI KAMI UNTUK</p>
 				<h4 className='font-serif font-semibold tracking-wide pb-1'>

@@ -6,7 +6,7 @@ let menus = [
 	{
 		id: 1,
 		name: 'Matcha Mille Crepes',
-		image: 'menu/matcha.jpg',
+		image: 'images/menu/matcha.jpg',
 		stars: 4.4,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -15,7 +15,7 @@ let menus = [
 	{
 		id: 2,
 		name: 'Nutella Mille Crepes',
-		image: 'menu/nutella.jpg',
+		image: 'images/menu/nutella.jpg',
 		stars: 4.5,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -24,7 +24,7 @@ let menus = [
 	{
 		id: 3,
 		name: 'Oreo Mille Crepes',
-		image: 'menu/oreo.jpg',
+		image: 'images/menu/oreo.jpg',
 		stars: 4.4,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -33,7 +33,7 @@ let menus = [
 	{
 		id: 4,
 		name: 'Strawberry Mille Crepes',
-		image: 'menu/strawberry.jpg',
+		image: 'images/menu/strawberry.jpg',
 		stars: 4.6,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
@@ -42,7 +42,7 @@ let menus = [
 	{
 		id: 5,
 		name: 'Tiramisu Mille Crepes',
-		image: 'menu/tiramisu.jpg',
+		image: 'images/menu/tiramisu.jpg',
 		stars: 4.7,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
