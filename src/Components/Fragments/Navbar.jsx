@@ -14,7 +14,7 @@ export const Navbar = () => {
 	let [open, setOpen] = useState(false)
 
 	return (
-		<nav className='shadow-md w-full z-50 fixed top-0 left-0 py-3 px-5 bg-white/70 backdrop-blur-md text-dark xl:px-20'>
+		<nav className='shadow-md w-full z-50 fixed top-0 left-0 py-3 px-5 bg-white text-dark xl:px-20'>
 			<div className='flex items-center justify-between'>
 				<div>
 					<a href='/'>
@@ -28,15 +28,13 @@ export const Navbar = () => {
 
 				<div
 					onClick={() => setOpen(!open)}
-					className='text-3xl flex items-center cursor-pointer xl:hidden'>
+					className='cursor-pointer xl:hidden'>
 					<CgMenuRightAlt className='w-10 h-10' />
 				</div>
 
 				<ul
-					className={`py-10 top-full absolute bg-light/95 xl:bg-inherit xl:z-auto z-[-1] left-0 w-full transition-all duration-300 xl:w-auto xl:pl-0 xl:static xl:flex xl:gap-7 xl:items-center xl:py-0 ${
-						open
-							? 'scale-y-100 origin-top opacity-100 xl:opacity-100 xl:scale-y-100'
-							: 'scale-y-0 origin-top opacity-0 xl:opacity-100 xl:scale-y-100'
+					className={`py-10 top-full absolute bg-white/70 backdrop-blur-md left-0 w-full transition-all duration-300 border-b-2 border-pink xl:border-none xl:w-auto xl:static xl:flex xl:gap-10 xl:items-center xl:py-0 xl:z-auto ${
+						open ? 'translate-x-0' : 'translate-x-full xl:translate-x-0'
 					}`}>
 					{Links.map((link) => (
 						<li key={link.name} className='text-center xl:my-0 my-7'>
