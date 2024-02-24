@@ -1,8 +1,10 @@
-# React + Vite
+# Zia Bakery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Zia Bakery website!
 
-Currently, two official plugins are available:
+This is the first web project that I built using React, while building this website I learned a lot about React concepts ranging from props, components, hooks and others. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+And it turns out that React is a technology that suits me, because with React I can build web applications more dynamically.
+Next time I will learn more about React and its ecosystem.
+
+Thanks for visiting... Give a star if you like this repository✨
