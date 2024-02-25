@@ -24,15 +24,17 @@
 	}
 }
 
-*::-webkit-scrollbar {
-	width: 0;
-}
+#menu {
+	*::-webkit-scrollbar {
+		width: 0;
+	}
 
-*::-webkit-scrollbar-track {
-	background: transparent;
-}
+	*::-webkit-scrollbar-track {
+		background: transparent;
+	}
 
-*::-webkit-scrollbar-thumb {
-	background: transparent;
-	border: none;
+	*::-webkit-scrollbar-thumb {
+		background: transparent;
+		border: none;
+	}
 }
