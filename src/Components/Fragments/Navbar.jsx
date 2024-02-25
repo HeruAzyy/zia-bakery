@@ -33,14 +33,14 @@ export const Navbar = () => {
 				</div>
 
 				<ul
-					className={`py-10 top-full absolute bg-white/70 backdrop-blur-md left-0 w-full transition-all duration-300 border-b-2 border-pink xl:border-none xl:w-auto xl:static xl:flex xl:gap-10 xl:items-center xl:py-0 xl:z-auto ${
+					className={`py-10 px-3 absolute top-[105%] right-0 bg-white/70 shadow-md rounded-l-xl backdrop-blur-lg w-1/2 transition-all duration-500 border-2 border-light md:w-1/4 xl:border-none xl:shadow-none xl:w-auto xl:static xl:flex xl:gap-10 xl:items-center xl:p-0 xl:z-auto ${
 						open ? 'translate-x-0' : 'translate-x-full xl:translate-x-0'
 					}`}>
 					{Links.map((link) => (
-						<li key={link.name} className='text-center xl:my-0 my-7'>
+						<li key={link.name} className='text-left my-2 xl:m-0'>
 							<a
 								href={link.link}
-								className='font-semibold text-lg hover:bg-pink hover:text-white py-3 px-10 rounded-lg transition-all xl:hover:bg-transparent xl:hover:text-pink xl:p-0 xl:rounded-none'>
+								className='font-semibold block text-lg py-3 px-3 rounded-lg transition-all hover:bg-pink hover:text-white xl:hover:bg-transparent xl:hover:text-pink xl:p-0 xl:rounded-none'>
 								{link.name}
 							</a>
 						</li>
