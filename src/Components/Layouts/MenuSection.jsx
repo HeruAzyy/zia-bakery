@@ -52,7 +52,7 @@ let menus = [
 
 export let MenuSection = () => {
 	return (
-		<section id='menu' className='px-5 py-24 whitespace-nowrap xl:px-20'>
+		<section id='menu' className='px-5 pt-24 whitespace-nowrap xl:px-20'>
 			<div className='flex items-center justify-between'>
 				<SectionTitle>Menu Kami</SectionTitle>
 				<a
