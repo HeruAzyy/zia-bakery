@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FaStar } from 'react-icons/fa6'
 import { Button } from '../Elements/Button'
+import { FaCartArrowDown } from 'react-icons/fa6'
 
 export const CardMenu = ({ children }) => {
 	return (
@@ -34,7 +35,12 @@ export const Footer = ({ price }) => {
 	return (
 		<div className='flex items-center justify-between pt-3'>
 			<p className='font-bold'>{price}</p>
-			<Button variant='bg-pink text-white'>Order Sekarang</Button>
+			<div className='flex gap-2 items-center'>
+				<Button variant='bg-transparent border-2 border-pink text-pink'>
+					<FaCartArrowDown className='w-5 h-5' />
+				</Button>
+				<Button variant='bg-pink text-white'>Order</Button>
+			</div>
 		</div>
 	)
 }
