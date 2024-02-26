@@ -1,14 +1,39 @@
 /* eslint-disable react/prop-types */
 import { CgMenuRightAlt } from 'react-icons/cg'
 import { useState } from 'react'
+import { GoHomeFill } from 'react-icons/go'
+import { FaCircleInfo } from 'react-icons/fa6'
+import { RiCustomerService2Fill } from 'react-icons/ri'
+import { BiSolidFoodMenu } from 'react-icons/bi'
+import { MdContactPhone } from 'react-icons/md'
 
 export const Navbar = () => {
 	let Links = [
-		{ name: 'Home', link: '#' },
-		{ name: 'About', link: '#about' },
-		{ name: 'Services', link: '#services' },
-		{ name: 'Menu', link: '#menu' },
-		{ name: 'Contact', link: '#contact' }
+		{
+			name: 'Home',
+			link: '#',
+			icon: <GoHomeFill className='w-5 h-5 xl:hidden' />
+		},
+		{
+			name: 'About',
+			link: '#about',
+			icon: <FaCircleInfo className='xl:hidden' />
+		},
+		{
+			name: 'Services',
+			link: '#services',
+			icon: <RiCustomerService2Fill className='w-5 h-5 xl:hidden' />
+		},
+		{
+			name: 'Menu',
+			link: '#menu',
+			icon: <BiSolidFoodMenu className='w-5 h-5 xl:hidden' />
+		},
+		{
+			name: 'Contact',
+			link: '#contact',
+			icon: <MdContactPhone className='w-5 h-5 xl:hidden' />
+		}
 	]
 
 	let [open, setOpen] = useState(false)
@@ -40,7 +65,8 @@ export const Navbar = () => {
 						<li key={link.name} className='text-left my-2 xl:m-0'>
 							<a
 								href={link.link}
-								className='font-semibold block text-lg py-3 px-3 rounded-lg transition-all hover:bg-pink hover:text-white xl:hover:bg-transparent xl:hover:text-pink xl:p-0 xl:rounded-none'>
+								className='flex items-center gap-3 text-lg font-semibold py-3 px-3 rounded-lg transition-all hover:bg-pink hover:text-white xl:hover:bg-transparent xl:hover:text-pink xl:p-0 xl:rounded-none'>
+								{link.icon}
 								{link.name}
 							</a>
 						</li>
