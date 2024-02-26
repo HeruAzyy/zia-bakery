@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { CgMenuRightAlt } from 'react-icons/cg'
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { GoHomeFill } from 'react-icons/go'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { RiCustomerService2Fill } from 'react-icons/ri'
@@ -37,6 +37,15 @@ export const Navbar = () => {
 	]
 
 	let [open, setOpen] = useState(false)
+	let menuRef = useRef()
+
+	useEffect(() => {
+		document.addEventListener('click', (e) => {
+			if (!menuRef.current.contains(e.target)) {
+				setOpen(false)
+			}
+		})
+	})
 
 	return (
 		<nav className='shadow-md w-full z-50 fixed top-0 left-0 py-3 px-5 bg-white text-dark lg:px-20'>
@@ -52,6 +61,7 @@ export const Navbar = () => {
 				</div>
 
 				<div
+					ref={menuRef}
 					onClick={() => setOpen(!open)}
 					className='cursor-pointer lg:hidden'>
 					<CgMenuRightAlt className='w-10 h-10' />
