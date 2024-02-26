@@ -47,6 +47,15 @@ let menus = [
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
 		price: 'IDR 27.000'
+	},
+	{
+		id: 6,
+		name: 'Coming Soon..',
+		image: 'images/menu/soon.png',
+		stars: '???',
+		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+    voluptatum quos perferendis ipsum libero id.`,
+		price: 'IDR ???'
 	}
 ]
 
@@ -63,7 +72,7 @@ export let MenuSection = () => {
 				</a>
 			</div>
 
-			<div className='flex gap-5 overflow-x-scroll snap-x snap-mandatory pb-1'>
+			<div className='flex gap-5 overflow-x-scroll snap-x snap-mandatory pb-1 xl:px-0.5 xl:grid xl:grid-cols-3'>
 				{menus.map((menu) => (
 					<CardMenu key={menu.id}>
 						<CardMenu.Header image={menu.image} stars={menu.stars} />

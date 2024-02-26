@@ -12,7 +12,7 @@ export const CardMenu = ({ children }) => {
 }
 export const Header = ({ image, stars }) => {
 	return (
-		<div className='rounded-t-lg overflow-hidden relative w-[300px]'>
+		<div className='rounded-t-lg overflow-hidden relative w-[300px] xl:w-[inherit]'>
 			<img className='w-full' src={image} alt='Menu Kami' />
 			<div className='absolute top-3 left-3'>
 				<div className='px-4 py-2 flex items-center gap-2 bg-pink rounded-3xl'>
