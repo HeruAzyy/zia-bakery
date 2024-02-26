@@ -3,7 +3,7 @@ import { Button } from '../Elements/Button'
 export const ContactOrder = () => {
 	return (
 		<>
-			<div id='contact' className='px-5 pt-20 pb-10 text-center xl:px-20'>
+			<div id='contact' className='px-5 pt-20 pb-10 text-center lg:px-20'>
 				<div className='rounded-3xl shadow-md overflow-hidden bg-[url(../images/order-img.webp)] bg-center bg-cover'>
 					<div className='text-white py-14 bg-dark/70'>
 						<p>HUBUNGI KAMI UNTUK</p>
@@ -18,7 +18,7 @@ export const ContactOrder = () => {
 				</div>
 			</div>
 
-			<div className='flex items-center justify-between w-full px-5 pb-1 text-sm xl:px-20'>
+			<div className='flex items-center justify-between w-full px-5 pb-1 text-sm lg:px-20'>
 				<div className='flex gap-2 items-center'>
 					<img className='w-4 h-4' src='logo.png' alt='Logo' />
 					<p className='font-serif tracking-wider'>Zia Bakery.</p>

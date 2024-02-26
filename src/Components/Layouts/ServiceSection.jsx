@@ -21,7 +21,7 @@ const services = [
 
 export const ServiceSection = () => {
 	return (
-		<section id='services' className='px-5 pt-24 xl:px-20'>
+		<section id='services' className='px-5 pt-24 lg:px-20'>
 			<SectionTitle>Services</SectionTitle>
 
 			<div className='flex gap-5 flex-col md:flex-row'>
@@ -36,5 +36,3 @@ export const ServiceSection = () => {
 		</section>
 	)
 }
-
-// flex-col md:flex-row

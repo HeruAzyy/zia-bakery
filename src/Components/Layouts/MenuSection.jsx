@@ -61,7 +61,7 @@ let menus = [
 
 export let MenuSection = () => {
 	return (
-		<section id='menu' className='px-5 pt-24 whitespace-nowrap xl:px-20'>
+		<section id='menu' className='px-5 pt-24 whitespace-nowrap lg:px-20'>
 			<div className='flex items-center justify-between'>
 				<SectionTitle>Menu Kami</SectionTitle>
 				<a
@@ -72,7 +72,7 @@ export let MenuSection = () => {
 				</a>
 			</div>
 
-			<div className='flex gap-5 overflow-x-scroll snap-x snap-mandatory pb-1 xl:px-0.5 xl:grid xl:grid-cols-3'>
+			<div className='flex gap-5 overflow-x-scroll snap-x snap-mandatory pb-1 lg:px-0.5 lg:grid lg:grid-cols-3'>
 				{menus.map((menu) => (
 					<CardMenu key={menu.id}>
 						<CardMenu.Header image={menu.image} stars={menu.stars} />
