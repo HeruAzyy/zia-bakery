@@ -4,7 +4,7 @@ import { Services } from '../Elements/Services'
 
 export const CardService = ({ title, description }) => {
 	return (
-		<div className='flex flex-col justify-between p-10 text-center border-t-2 rounded-2xl shadow-md lg:hover:bg-gray-200'>
+		<div className='flex flex-col justify-between p-10 border text-center rounded-2xl shadow-md transition-all duration-300 lg:hover:bg-gray-100'>
 			<Services title={title} description={description} />
 			<a
 				href='#services'

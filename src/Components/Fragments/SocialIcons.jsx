@@ -31,7 +31,7 @@ export const SocialIcons = () => {
 		<div className='flex gap-5 items-center justify-center flex-row'>
 			{Icons.map((icon) => (
 				<a className='cursor-pointer' href={icon.href} key={icon.id}>
-					<div className='bg-white p-3 rounded-full hover:scale-125 transition-all'>
+					<div className='bg-white p-3 rounded-full hover:scale-125 transition-all duration-300'>
 						{icon.nameIcon}
 					</div>
 				</a>

@@ -72,7 +72,7 @@ export let MenuSection = () => {
 				</a>
 			</div>
 
-			<div className='flex gap-5 overflow-x-scroll snap-x snap-mandatory pb-1 lg:px-0.5 lg:grid lg:grid-cols-3'>
+			<div className='flex gap-3 overflow-x-scroll snap-x snap-mandatory pb-1 lg:gap-5 lg:px-0.5 lg:grid lg:grid-cols-3'>
 				{menus.map((menu) => (
 					<CardMenu key={menu.id}>
 						<CardMenu.Header image={menu.image} stars={menu.stars} />
