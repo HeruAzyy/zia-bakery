@@ -5,7 +5,7 @@ import { FaCartArrowDown } from 'react-icons/fa6'
 
 export const CardMenu = ({ children }) => {
 	return (
-		<div className='border shadow-md rounded-2xl p-5 snap-start snap-always group lg:hover:bg-gray-100'>
+		<div className='border shadow-md rounded-2xl p-5 snap-start snap-always group transition-all duration-300 lg:hover:bg-gray-100'>
 			{children}
 		</div>
 	)
@@ -14,7 +14,7 @@ export const Header = ({ image, stars }) => {
 	return (
 		<div className='rounded-t-lg overflow-hidden relative w-[300px] lg:w-[inherit]'>
 			<img
-				className='group-hover:scale-105 transition-all duration-300'
+				className='w-full group-hover:scale-105 transition-all duration-300'
 				src={image}
 				alt='Menu Kami'
 			/>

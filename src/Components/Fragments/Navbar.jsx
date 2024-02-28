@@ -52,7 +52,7 @@ export const Navbar = () => {
 		<motion.nav
 			initial={false}
 			animate={open ? 'open' : 'closed'}
-			className='shadow-md w-full z-50 fixed top-0 left-0 py-3 px-5 bg-white text-dark lg:px-20'>
+			className='shadow-md w-[90%] z-50 fixed top-3 right-1/2 left-1/2 -translate-x-1/2 py-3 px-7 bg-light/70 backdrop-blur-lg rounded-full text-dark lg:px-10'>
 			<div className='flex items-center justify-between'>
 				<div>
 					<a href='/'>
@@ -68,7 +68,9 @@ export const Navbar = () => {
 				<ul className={`hidden lg:flex lg:gap-7`}>
 					{Links.map((link) => (
 						<li key={link.name} className='text-lg font-semibold'>
-							<a href={link.link} className='hover:text-pink'>
+							<a
+								href={link.link}
+								className='hover:text-pink transition-all'>
 								{link.name}
 							</a>
 						</li>
@@ -86,7 +88,8 @@ export const Navbar = () => {
 				<motion.ul
 					variants={{
 						open: {
-							transform: 'translateX(0px)',
+							transform: 'translateX(0%)',
+							opacity: 1,
 							transition: {
 								duration: 0.5,
 								delayChildren: 0.3,
@@ -97,13 +100,14 @@ export const Navbar = () => {
 							}
 						},
 						closed: {
-							transform: 'translateX(110%)',
+							transform: 'translateX(100%)',
+							opacity: 0,
 							transition: {
-								duration: 0.2
+								duration: 0.3
 							}
 						}
 					}}
-					className='py-5 px-3 absolute top-[110%] right-2 bg-white/70 shadow-md rounded-xl backdrop-blur-lg w-1/2 transition-all border-2 border-light md:w-1/4 lg:hidden'>
+					className='py-5 px-3 absolute top-[120%] right-0 bg-light shadow-md rounded-xl w-1/2 transition-all border-2 border-light md:w-1/4 lg:hidden'>
 					{Links.map((link) => (
 						<motion.li
 							variants={{
