@@ -3,7 +3,7 @@ import { SocialIcons } from '../Fragments/SocialIcons'
 
 export const HeroSection = () => {
 	return (
-		<section className='bg-[url(../images/hero-img.webp)] bg-cover bg-center h-[100svh]'>
+		<section className='bg-[url(../images/hero-img.webp)] bg-cover bg-center bg-fixed h-[100svh]'>
 			<div className='h-full w-full backdrop-brightness-50 bg-dark/50 flex items-center justify-center'>
 				<div className='text-center text-white pt-20 px-5 md:px-20'>
 					<p className='text-lg tracking-wider'>WELCOME TO</p>
