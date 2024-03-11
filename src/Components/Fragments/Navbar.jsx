@@ -8,6 +8,7 @@ import { BiSolidFoodMenu } from 'react-icons/bi'
 import { MdContactPhone } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import { IoCart } from 'react-icons/io5'
+import { MdDelete } from 'react-icons/md'
 
 export const Navbar = () => {
 	let Links = [
@@ -83,8 +84,50 @@ export const Navbar = () => {
 				</div>
 
 				{/* Cart */}
-				<ul className='py-5 px-3 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl md:w-1/2 lg:w-1/3'>
-					<li>Cart</li>
+				<ul className='flex flex-col gap-3 p-5 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl md:w-1/2 lg:w-1/3'>
+					<li>
+						<div className='flex justify-between items-center'>
+							<div className='flex gap-3 items-center'>
+								<div className='w-20 rounded-lg overflow-hidden border border-dark'>
+									<img
+										src='../public/images/menu/matcha.jpg'
+										alt='Menu'
+									/>
+								</div>
+
+								<div>
+									<p className='font-semibold'>Matcha Mille Crepes</p>
+									<p className='text-sm'>Rp 25.000,00</p>
+								</div>
+							</div>
+
+							<div className='cursor-pointer group'>
+								<MdDelete className='w-7 h-7 group-hover:fill-pink' />
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div className='flex justify-between items-center'>
+							<div className='flex gap-3 items-center'>
+								<div className='w-20 rounded-lg overflow-hidden border border-dark'>
+									<img
+										src='../public/images/menu/nutella.jpg'
+										alt='Menu'
+									/>
+								</div>
+
+								<div>
+									<p className='font-semibold'>Nutella Mille Crepes</p>
+									<p className='text-sm'>Rp 23.000,00</p>
+								</div>
+							</div>
+
+							<div className='cursor-pointer group'>
+								<MdDelete className='w-7 h-7 group-hover:fill-pink' />
+							</div>
+						</div>
+					</li>
 				</ul>
 
 				{/* Mobile Nav */}
