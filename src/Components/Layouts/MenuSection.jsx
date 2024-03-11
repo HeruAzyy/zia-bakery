@@ -55,7 +55,7 @@ let menus = [
 		stars: '???',
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
-		price: 'IDR ???'
+		price: 'Rp ???'
 	}
 ]
 
