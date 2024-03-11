@@ -10,7 +10,7 @@ let menus = [
 		stars: 4.4,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
-		price: 'IDR 25.000'
+		price: 25000
 	},
 	{
 		id: 2,
@@ -19,7 +19,7 @@ let menus = [
 		stars: 4.5,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
-		price: 'IDR 23.000'
+		price: 23000
 	},
 	{
 		id: 3,
@@ -28,7 +28,7 @@ let menus = [
 		stars: 4.4,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
-		price: 'IDR 20.000'
+		price: 20000
 	},
 	{
 		id: 4,
@@ -37,7 +37,7 @@ let menus = [
 		stars: 4.6,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
-		price: 'IDR 23.000'
+		price: 23000
 	},
 	{
 		id: 5,
@@ -46,7 +46,7 @@ let menus = [
 		stars: 4.7,
 		description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
     voluptatum quos perferendis ipsum libero id.`,
-		price: 'IDR 27.000'
+		price: 27000
 	},
 	{
 		id: 6,
@@ -79,7 +79,12 @@ export let MenuSection = () => {
 						<CardMenu.Body name={menu.name}>
 							{menu.description}
 						</CardMenu.Body>
-						<CardMenu.Footer price={menu.price} />
+						<CardMenu.Footer
+							price={menu.price.toLocaleString('id-ID', {
+								style: 'currency',
+								currency: 'IDR'
+							})}
+						/>
 					</CardMenu>
 				))}
 			</div>

@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply font-jost text-base;
+		@apply font-jost text-base lg:text-lg;
 	}
 
 	h1 {
