@@ -7,6 +7,7 @@ import { RiCustomerService2Fill } from 'react-icons/ri'
 import { BiSolidFoodMenu } from 'react-icons/bi'
 import { MdContactPhone } from 'react-icons/md'
 import { motion } from 'framer-motion'
+import { IoCart } from 'react-icons/io5'
 
 export const Navbar = () => {
 	let Links = [
@@ -77,12 +78,27 @@ export const Navbar = () => {
 					))}
 				</ul>
 
+				<div className='hidden cursor-pointer group lg:block'>
+					<IoCart className='w-7 h-7 group-hover:fill-pink transition-all' />
+				</div>
+
+				{/* Cart */}
+				<ul className='py-5 px-3 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl md:w-1/2 lg:w-1/3'>
+					<li>Cart</li>
+				</ul>
+
 				{/* Mobile Nav */}
-				<div
-					ref={menuRef}
-					onClick={() => setOpen(!open)}
-					className='cursor-pointer lg:hidden'>
-					<CgMenuRightAlt className='w-10 h-10' />
+				<div className='flex gap-5 lg:hidden'>
+					<div className='cursor-pointer group'>
+						<IoCart className='w-9 h-9 group-hover:fill-pink transition-all' />
+					</div>
+
+					<div
+						ref={menuRef}
+						onClick={() => setOpen(!open)}
+						className='cursor-pointer'>
+						<CgMenuRightAlt className='w-10 h-10' />
+					</div>
 				</div>
 
 				<motion.ul
@@ -107,7 +123,7 @@ export const Navbar = () => {
 							}
 						}
 					}}
-					className='py-5 px-3 absolute top-[120%] right-0 bg-light shadow-md rounded-xl w-1/2 transition-all border-2 border-light md:w-1/4 lg:hidden'>
+					className='py-5 px-3 absolute top-[120%] right-0 bg-light shadow-md rounded-xl w-1/2 md:w-1/4 lg:hidden'>
 					{Links.map((link) => (
 						<motion.li
 							variants={{
