@@ -40,6 +40,7 @@ export const Navbar = () => {
 	]
 
 	let [open, setOpen] = useState(false)
+	let [cartOpen, setCartOpen] = useState(false)
 	let menuRef = useRef()
 
 	useEffect(() => {
@@ -79,20 +80,22 @@ export const Navbar = () => {
 					))}
 				</ul>
 
-				<div className='hidden cursor-pointer group lg:block'>
+				<div
+					onClick={() => setCartOpen(!cartOpen)}
+					className='hidden cursor-pointer group lg:block'>
 					<IoCart className='w-7 h-7 group-hover:fill-pink transition-all' />
 				</div>
 
 				{/* Cart */}
-				<ul className='flex flex-col gap-3 p-5 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl md:w-1/2 lg:w-1/3'>
+				<ul
+					className={`flex flex-col gap-3 p-5 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl transition-all duration-500 md:w-1/2 lg:w-1/3 ${
+						cartOpen ? 'translate-x-0' : 'opacity-0 translate-x-full'
+					}`}>
 					<li>
 						<div className='flex justify-between items-center'>
 							<div className='flex gap-3 items-center'>
 								<div className='w-20 rounded-lg overflow-hidden border border-dark'>
-									<img
-										src='../public/images/menu/matcha.jpg'
-										alt='Menu'
-									/>
+									<img src='images/menu/matcha.jpg' alt='Menu' />
 								</div>
 
 								<div>
@@ -111,10 +114,7 @@ export const Navbar = () => {
 						<div className='flex justify-between items-center'>
 							<div className='flex gap-3 items-center'>
 								<div className='w-20 rounded-lg overflow-hidden border border-dark'>
-									<img
-										src='../public/images/menu/nutella.jpg'
-										alt='Menu'
-									/>
+									<img src='images/menu/nutella.jpg' alt='Menu' />
 								</div>
 
 								<div>
@@ -132,7 +132,9 @@ export const Navbar = () => {
 
 				{/* Mobile Nav */}
 				<div className='flex gap-5 lg:hidden'>
-					<div className='cursor-pointer group'>
+					<div
+						onClick={() => setCartOpen(!cartOpen)}
+						className='cursor-pointer group'>
 						<IoCart className='w-9 h-9 group-hover:fill-pink transition-all' />
 					</div>
 
@@ -150,12 +152,8 @@ export const Navbar = () => {
 							transform: 'translateX(0%)',
 							opacity: 1,
 							transition: {
-								duration: 0.5,
 								delayChildren: 0.3,
-								staggerChildren: 0.05,
-								type: 'spring',
-								stiffness: 300,
-								damping: 20
+								staggerChildren: 0.05
 							}
 						},
 						closed: {
