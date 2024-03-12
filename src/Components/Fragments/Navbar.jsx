@@ -87,10 +87,7 @@ export const Navbar = () => {
 	})
 
 	return (
-		<motion.nav
-			initial={false}
-			animate={open ? 'open' : 'closed'}
-			className='shadow-md w-[90%] z-50 fixed top-3 right-1/2 left-1/2 -translate-x-1/2 py-3 px-7 bg-light/70 backdrop-blur-md rounded-full text-dark lg:px-10'>
+		<motion.nav className='shadow-md w-[90%] z-50 fixed top-3 right-1/2 left-1/2 -translate-x-1/2 py-3 px-7 bg-light/70 backdrop-blur-md rounded-full text-dark lg:px-10'>
 			<div className='flex items-center justify-between'>
 				<div>
 					<a href='/'>
@@ -123,10 +120,10 @@ export const Navbar = () => {
 
 				{/* Cart */}
 				<motion.ul
-					className='flex flex-col gap-3 p-5 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl md:w-1/2 lg:w-1/3'
 					variants={containerVariants}
 					initial='closed'
-					animate={cartOpen ? 'open' : 'closed'}>
+					animate={cartOpen ? 'open' : 'closed'}
+					className='flex flex-col gap-3 p-5 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl md:w-1/2 lg:w-1/3'>
 					<motion.li variants={itemVariants}>
 						<div className='flex justify-between items-center'>
 							<div className='flex gap-3 items-center'>
@@ -170,19 +167,21 @@ export const Navbar = () => {
 				<div className='flex gap-3 lg:hidden'>
 					<div
 						onClick={() => setCartOpen(!cartOpen)}
-						className='cursor-pointer group'>
-						<IoCart className='w-9 h-9 group-hover:fill-pink transition-all' />
+						className='cursor-pointer'>
+						<IoCart className='w-9 h-9' />
 					</div>
 
 					<div
 						ref={menuRef}
 						onClick={() => setOpen(!open)}
-						className='cursor-pointer group'>
-						<CgMenuRightAlt className='w-10 h-10 group-hover:fill-pink transition-all' />
+						className='cursor-pointer'>
+						<CgMenuRightAlt className='w-10 h-10' />
 					</div>
 				</div>
 
 				<motion.ul
+					initial='closed'
+					animate={open ? 'open' : 'closed'}
 					variants={containerVariants}
 					className='py-5 px-3 absolute top-[120%] right-0 bg-light shadow-md rounded-xl w-1/2 md:w-1/4 lg:hidden'>
 					{Links.map((link) => (
