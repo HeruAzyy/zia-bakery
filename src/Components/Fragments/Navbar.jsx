@@ -43,6 +43,41 @@ export const Navbar = () => {
 	let [cartOpen, setCartOpen] = useState(false)
 	let menuRef = useRef()
 
+	const containerVariants = {
+		open: {
+			transform: 'translateX(0%)',
+			opacity: 1,
+			transition: {
+				delayChildren: 0.3,
+				staggerChildren: 0.05
+			}
+		},
+		closed: {
+			transform: 'translateX(100%)',
+			opacity: 0,
+			transition: {
+				duration: 0.3
+			}
+		}
+	}
+
+	const itemVariants = {
+		open: {
+			opacity: 1,
+			x: 0,
+			transition: {
+				type: 'spring',
+				stiffness: 300,
+				damping: 20
+			}
+		},
+		closed: {
+			opacity: 0,
+			x: 20,
+			transition: { duration: 0.2 }
+		}
+	}
+
 	useEffect(() => {
 		document.addEventListener('click', (e) => {
 			if (!menuRef.current.contains(e.target)) {
@@ -87,11 +122,12 @@ export const Navbar = () => {
 				</div>
 
 				{/* Cart */}
-				<ul
-					className={`flex flex-col gap-3 p-5 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl transition-all duration-500 md:w-1/2 lg:w-1/3 ${
-						cartOpen ? 'translate-x-0' : 'opacity-0 translate-x-full'
-					}`}>
-					<li>
+				<motion.ul
+					className='flex flex-col gap-3 p-5 absolute top-[120%] right-0 bg-light w-full shadow-md rounded-xl md:w-1/2 lg:w-1/3'
+					variants={containerVariants}
+					initial='closed'
+					animate={cartOpen ? 'open' : 'closed'}>
+					<motion.li variants={itemVariants}>
 						<div className='flex justify-between items-center'>
 							<div className='flex gap-3 items-center'>
 								<div className='w-20 rounded-lg overflow-hidden border border-dark'>
@@ -108,9 +144,9 @@ export const Navbar = () => {
 								<MdDelete className='w-7 h-7 group-hover:fill-pink' />
 							</div>
 						</div>
-					</li>
+					</motion.li>
 
-					<li>
+					<motion.li variants={itemVariants}>
 						<div className='flex justify-between items-center'>
 							<div className='flex gap-3 items-center'>
 								<div className='w-20 rounded-lg overflow-hidden border border-dark'>
@@ -127,11 +163,11 @@ export const Navbar = () => {
 								<MdDelete className='w-7 h-7 group-hover:fill-pink' />
 							</div>
 						</div>
-					</li>
-				</ul>
+					</motion.li>
+				</motion.ul>
 
 				{/* Mobile Nav */}
-				<div className='flex gap-5 lg:hidden'>
+				<div className='flex gap-3 lg:hidden'>
 					<div
 						onClick={() => setCartOpen(!cartOpen)}
 						className='cursor-pointer group'>
@@ -141,48 +177,17 @@ export const Navbar = () => {
 					<div
 						ref={menuRef}
 						onClick={() => setOpen(!open)}
-						className='cursor-pointer'>
-						<CgMenuRightAlt className='w-10 h-10' />
+						className='cursor-pointer group'>
+						<CgMenuRightAlt className='w-10 h-10 group-hover:fill-pink transition-all' />
 					</div>
 				</div>
 
 				<motion.ul
-					variants={{
-						open: {
-							transform: 'translateX(0%)',
-							opacity: 1,
-							transition: {
-								delayChildren: 0.3,
-								staggerChildren: 0.05
-							}
-						},
-						closed: {
-							transform: 'translateX(100%)',
-							opacity: 0,
-							transition: {
-								duration: 0.3
-							}
-						}
-					}}
+					variants={containerVariants}
 					className='py-5 px-3 absolute top-[120%] right-0 bg-light shadow-md rounded-xl w-1/2 md:w-1/4 lg:hidden'>
 					{Links.map((link) => (
 						<motion.li
-							variants={{
-								open: {
-									opacity: 1,
-									x: 0,
-									transition: {
-										type: 'spring',
-										stiffness: 300,
-										damping: 20
-									}
-								},
-								closed: {
-									opacity: 0,
-									x: 20,
-									transition: { duration: 0.2 }
-								}
-							}}
+							variants={itemVariants}
 							key={link.name}
 							className='text-left my-2'>
 							<a
