@@ -39,10 +39,6 @@ export const Navbar = () => {
 		}
 	]
 
-	let [open, setOpen] = useState(false)
-	let [cartOpen, setCartOpen] = useState(false)
-	let menuRef = useRef()
-
 	const containerVariants = {
 		open: {
 			transform: 'translateX(0%)',
@@ -78,17 +74,26 @@ export const Navbar = () => {
 		}
 	}
 
+	let [open, setOpen] = useState(false)
+	let [cartOpen, setCartOpen] = useState(false)
+	let menuRef = useRef()
+
 	useEffect(() => {
-		document.addEventListener('click', (e) => {
+		let handler = (e) => {
 			if (!menuRef.current.contains(e.target)) {
 				setOpen(false)
 			}
-		})
+			if (!menuRef.current.contains(e.target)) {
+				setCartOpen(false)
+			}
+		}
+
+		document.addEventListener('click', handler)
 	})
 
 	return (
 		<motion.nav className='shadow-md w-[90%] z-50 fixed top-3 right-1/2 left-1/2 -translate-x-1/2 py-3 px-7 bg-light/70 backdrop-blur-md rounded-full text-dark lg:px-10'>
-			<div className='flex items-center justify-between'>
+			<div ref={menuRef} className='flex items-center justify-between'>
 				<div>
 					<a href='/'>
 						<img
@@ -171,10 +176,7 @@ export const Navbar = () => {
 						<IoCart className='w-9 h-9' />
 					</div>
 
-					<div
-						ref={menuRef}
-						onClick={() => setOpen(!open)}
-						className='cursor-pointer'>
+					<div onClick={() => setOpen(!open)} className='cursor-pointer'>
 						<CgMenuRightAlt className='w-10 h-10' />
 					</div>
 				</div>
