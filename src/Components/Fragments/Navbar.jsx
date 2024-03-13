@@ -147,33 +147,14 @@ export const Navbar = () => {
 							</div>
 						</div>
 					</motion.li>
-
-					<motion.li variants={itemVariants}>
-						<div className='flex justify-between items-center'>
-							<div className='flex gap-3 items-center'>
-								<div className='w-20 rounded-lg overflow-hidden border border-dark'>
-									<img src='images/menu/nutella.jpg' alt='Menu' />
-								</div>
-
-								<div>
-									<p className='font-semibold'>Nutella Mille Crepes</p>
-									<p className='text-sm'>Rp 23.000,00</p>
-								</div>
-							</div>
-
-							<div className='cursor-pointer group'>
-								<MdDelete className='w-7 h-7 group-hover:fill-pink' />
-							</div>
-						</div>
-					</motion.li>
 				</motion.ul>
 
 				{/* Mobile Nav */}
-				<div className='flex gap-3 lg:hidden'>
+				<div className='flex gap-3 items-center lg:hidden'>
 					<div
 						onClick={() => setCartOpen(!cartOpen)}
 						className='cursor-pointer'>
-						<IoCart className='w-9 h-9' />
+						<IoCart className='w-8 h-8' />
 					</div>
 
 					<div onClick={() => setOpen(!open)} className='cursor-pointer'>
