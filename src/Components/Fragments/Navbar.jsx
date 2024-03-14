@@ -5,10 +5,9 @@ import { FaCircleInfo } from 'react-icons/fa6'
 import { RiCustomerService2Fill } from 'react-icons/ri'
 import { BiSolidFoodMenu } from 'react-icons/bi'
 import { MdContactPhone } from 'react-icons/md'
-import { IoCart } from 'react-icons/io5'
+import { IoSearch } from 'react-icons/io5'
 import MobileNav from '../Elements/Navbar/MobileNav'
 import DesktopNav from '../Elements/Navbar/DesktopNav'
-import Cart from '../Elements/Navbar/Cart'
 
 export const Navbar = () => {
 	let Links = [
@@ -75,16 +74,12 @@ export const Navbar = () => {
 	}
 
 	let [open, setOpen] = useState(false)
-	let [cartOpen, setCartOpen] = useState(false)
 	let menuRef = useRef()
 
 	useEffect(() => {
 		let handler = (e) => {
 			if (!menuRef.current.contains(e.target)) {
 				setOpen(false)
-			}
-			if (!menuRef.current.contains(e.target)) {
-				setCartOpen(false)
 			}
 		}
 
@@ -107,29 +102,18 @@ export const Navbar = () => {
 				{/* Desktop Nav */}
 				<DesktopNav Links={Links} />
 
-				<div
-					onClick={() => setCartOpen(!cartOpen)}
-					className='hidden cursor-pointer group lg:block'>
-					<IoCart className='w-7 h-7 group-hover:fill-pink transition-all' />
+				<div className='hidden cursor-pointer group lg:block'>
+					<IoSearch className='w-7 h-7 group-hover:fill-pink' />
 				</div>
 
-				{/* Cart */}
-				<Cart
-					cartOpen={cartOpen}
-					containerVariants={containerVariants}
-					itemVariants={itemVariants}
-				/>
-
 				{/* Mobile Nav */}
-				<div className='flex gap-3 items-center lg:hidden'>
-					<div
-						onClick={() => setCartOpen(!cartOpen)}
-						className='cursor-pointer'>
-						<IoCart className='w-8 h-8' />
+				<div className='flex gap-2 items-center lg:hidden'>
+					<div className='cursor-pointer'>
+						<IoSearch className='w-8 h-8 active:scale-95' />
 					</div>
 
 					<div onClick={() => setOpen(!open)} className='cursor-pointer'>
-						<CgMenuRightAlt className='w-10 h-10' />
+						<CgMenuRightAlt className='w-10 h-10 active:scale-95' />
 					</div>
 				</div>
 
