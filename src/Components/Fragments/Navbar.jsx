@@ -87,7 +87,7 @@ export const Navbar = () => {
 	})
 
 	return (
-		<nav className='shadow-md w-[90%] z-50 fixed top-3 right-1/2 left-1/2 -translate-x-1/2 py-3 px-7 bg-light/70 backdrop-blur-md rounded-full text-dark lg:px-10'>
+		<nav className='shadow-md w-[90%] z-50 fixed top-3 right-1/2 left-1/2 -translate-x-1/2 py-3 px-7 bg-light/70 backdrop-blur-md rounded-full text-dark'>
 			<div ref={menuRef} className='flex items-center justify-between'>
 				<div>
 					<a href='/'>
@@ -103,7 +103,7 @@ export const Navbar = () => {
 				<DesktopNav Links={Links} />
 
 				<div className='hidden cursor-pointer group lg:block'>
-					<IoSearch className='w-7 h-7 group-hover:fill-pink' />
+					<IoSearch className='w-7 h-7 group-hover:fill-pink active:scale-90' />
 				</div>
 
 				{/* Mobile Nav */}
