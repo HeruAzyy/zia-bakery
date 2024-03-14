@@ -11,7 +11,7 @@ export default function MobileNav({
 			initial='closed'
 			animate={open ? 'open' : 'closed'}
 			variants={containerVariants}
-			className='py-5 px-3 absolute top-[120%] right-0 bg-light shadow-md rounded-xl w-1/2 md:w-1/4 lg:hidden'>
+			className='p-3 absolute top-[120%] right-0 bg-light shadow-md rounded-xl w-1/2 md:w-1/4 lg:hidden'>
 			{Links.map((link) => (
 				<motion.li
 					variants={itemVariants}
