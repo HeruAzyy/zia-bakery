@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { CgMenuRightAlt } from 'react-icons/cg'
 import { useEffect, useState, useRef } from 'react'
 import { GoHomeFill } from 'react-icons/go'
@@ -9,6 +8,8 @@ import { MdContactPhone } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import { IoCart } from 'react-icons/io5'
 import { MdDelete } from 'react-icons/md'
+import MobileNav from '../Elements/Navbar/MobileNav'
+import DesktopNav from '../Elements/Navbar/DesktopNav'
 
 export const Navbar = () => {
 	let Links = [
@@ -92,7 +93,7 @@ export const Navbar = () => {
 	})
 
 	return (
-		<motion.nav className='shadow-md w-[90%] z-50 fixed top-3 right-1/2 left-1/2 -translate-x-1/2 py-3 px-7 bg-light/70 backdrop-blur-md rounded-full text-dark lg:px-10'>
+		<nav className='shadow-md w-[90%] z-50 fixed top-3 right-1/2 left-1/2 -translate-x-1/2 py-3 px-7 bg-light/70 backdrop-blur-md rounded-full text-dark lg:px-10'>
 			<div ref={menuRef} className='flex items-center justify-between'>
 				<div>
 					<a href='/'>
@@ -105,17 +106,7 @@ export const Navbar = () => {
 				</div>
 
 				{/* Desktop Nav */}
-				<ul className={`hidden lg:flex lg:gap-7`}>
-					{Links.map((link) => (
-						<li key={link.name} className='text-lg font-semibold'>
-							<a
-								href={link.link}
-								className='hover:text-pink transition-all'>
-								{link.name}
-							</a>
-						</li>
-					))}
-				</ul>
+				<DesktopNav Links={Links} />
 
 				<div
 					onClick={() => setCartOpen(!cartOpen)}
@@ -162,26 +153,13 @@ export const Navbar = () => {
 					</div>
 				</div>
 
-				<motion.ul
-					initial='closed'
-					animate={open ? 'open' : 'closed'}
-					variants={containerVariants}
-					className='py-5 px-3 absolute top-[120%] right-0 bg-light shadow-md rounded-xl w-1/2 md:w-1/4 lg:hidden'>
-					{Links.map((link) => (
-						<motion.li
-							variants={itemVariants}
-							key={link.name}
-							className='text-left my-2'>
-							<a
-								href={link.link}
-								className='flex items-center gap-3 text-lg py-3 px-3 rounded-lg transition-all hover:bg-pink hover:text-white'>
-								{link.icon}
-								{link.name}
-							</a>
-						</motion.li>
-					))}
-				</motion.ul>
+				<MobileNav
+					open={open}
+					Links={Links}
+					containerVariants={containerVariants}
+					itemVariants={itemVariants}
+				/>
 			</div>
-		</motion.nav>
+		</nav>
 	)
 }
