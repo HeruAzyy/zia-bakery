@@ -24,7 +24,7 @@ export const ServiceSection = () => {
 		<section id='services' className='px-5 pt-24 lg:px-20'>
 			<SectionTitle>Layanan</SectionTitle>
 
-			<div className='flex gap-5 flex-col md:flex-row'>
+			<div className='flex gap-3 flex-col md:flex-row'>
 				{services.map((service) => (
 					<CardService
 						key={service.id}
